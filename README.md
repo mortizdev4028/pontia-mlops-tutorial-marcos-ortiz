@@ -1,2 +1,2 @@
-# pontia-mlops-tutorial-marcos-ortiz
-Repositorio Módulo 4 - MLOPS
+# Simple ML Training Project
+This project trains a RandomForest model on tabular data.
