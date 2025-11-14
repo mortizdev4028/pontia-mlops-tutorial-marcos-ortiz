@@ -1,3 +1,24 @@
+# --- ML & data artifacts ---
+mlruns/
+artifacts/
+models/
+*.log
+*.h5
+*.pkl
+*.joblib
+*.ckpt
+
+# --- Data files ---
+data/
+*.csv
+*.tsv
+*.json
+*.xlsx
+*.parquet
+*.zip
+*.gz
+
+
 # --- Python ---
 __pycache__/
 *.py[cod]
@@ -16,12 +37,11 @@ env/
 venv/
 ENV/
 *.env
+mlops_venv/
 
 # --- Jupyter and notebooks ---
 .ipynb_checkpoints/
 *.nbconvert.ipynb
-
-
 
 # --- Experiment configs ---
 *.tfvars
@@ -64,3 +84,4 @@ docker-compose.override.yml
 *.key
 .envrc
 .env.*
+models/model.pkl
