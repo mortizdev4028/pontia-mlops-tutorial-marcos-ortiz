@@ -4,6 +4,7 @@ import platform
 import joblib
 import mlflow
 import mlflow.sklearn
+import os
 from pathlib import Path
 from datetime import datetime
 from data_loader import load_data, preprocess_data
@@ -21,14 +22,11 @@ logging.basicConfig(
 )
 logger=logging.getLogger("adult-income")
 
-run_name = f"run-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
+run_name = os.getenv("RUN_NAME", "run_name_not_found")
 
 # MLflow config
-MLFLOW_URI = "http://mlflow-9675.eastus.azurecontainer.io:5000"
-EXPERIMENT_NAME = "adult-income-mortiz"
-
-mlflow.set_tracking_uri(MLFLOW_URI)
-mlflow.set_experiment(EXPERIMENT_NAME)
+#MLFLOW_URI = os.getenv("MLFLOW_URL")
+#EXPERIMENT_NAME = os.getenv("EXPERIMENT_NAME")
 
 # Paths
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -37,6 +35,8 @@ MODEL_DIR = PROJECT_ROOT / "models"
 MODEL_DIR.mkdir(exist_ok=True)
 
 def main():
+    mlflow.set_tracking_uri(os.getenv("MLFLOW_URL", "no_url_found"))
+    mlflow.set_experiment(os.getenv("EXPERIMENT_NAME", "no_experiment_name_found"))
     script_start = time.time()
     logger.info(f"System info: {platform.platform()}")
 
