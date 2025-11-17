@@ -1,4 +1,4 @@
-ame: Deploy Model
+name: Deploy Model
 
 on:
   workflow_dispatch:
