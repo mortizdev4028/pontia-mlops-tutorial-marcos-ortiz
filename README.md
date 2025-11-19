@@ -1,4 +1,4 @@
-# pontia-mlops-tutorial — Adult Income Prediction
+# Evaluación Módulo 3 - Introducción a DevOps
 
 <p align="center">
   <img src="https://img.icons8.com/color/96/000000/artificial-intelligence.png" alt="AI Logo" height="48"/>
