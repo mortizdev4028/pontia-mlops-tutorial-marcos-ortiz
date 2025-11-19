@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.icons8.com/color/96/000000/artificial-intelligence.png" alt="AI Logo" height="48"/>
-  <img src="https://img.icons8.com/color/96/000000/machine-learning.png" alt="ML Logo" height="48"/>
   <img src="https://img.icons8.com/color/96/000000/data-center.png" alt="Data Center" height="48"/>
 </p>
 
@@ -103,6 +102,10 @@ Construye imagen Docker, publica en ACR y despliega en ACI, con endpoint métric
 
 ## 📝 Flujo de Trabajo Recomendado
 
+- Con la Rulseset habilitada:
+- Clonar Repositorio en local: "git clone git@github.com:mortizdev4028/pontia-mlops-tutorial-marcos-ortiz.git"
+- Crear nueva branch "git checkout -b feature"
+- Generar cambios y ejecutar git add . + git commit -m "Comentario"
 - Crear PR → Solicitar revisión → Esperar check `integrate.yml`
 - Merge a main → Ejecutar `build.yml`
 - Si OK → `deploy.yml` publica y despliega la API en Azure
@@ -158,11 +161,7 @@ print(resp.status_code, resp.json())
 
 ## 🖼️ Testing — Capturas de Pantalla
 
-Incluye aquí capturas del uso de la API vía FastAPI, Postman o Python.
-
-![Check Icon](https://img.icons8.com/color/48/000000/checked--v1.png)
-
-Ejemplo:
+Capturas del uso de la API vía navegador, y ThunderClient (VSCode).
 
 <p align="center">
   <img src="screenshots/api_health.png" alt="API Health" width="400"/>
