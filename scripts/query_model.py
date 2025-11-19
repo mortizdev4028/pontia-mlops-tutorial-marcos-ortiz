@@ -1,9 +1,9 @@
 import requests
 
-API_URL = "http://model-api-test-15761373539.eastus.azurecontainer.io:8080/predict"
+API_URL = "http://model-api-mortiz-19443098861.eastus.azurecontainer.io:8080/predict"
 
 payload = {
-  "age": 38,
+  "age": 45,
   "workclass": "Private",
   "fnlwgt": 89814,
   "education": "HS-grad",
